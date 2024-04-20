@@ -1,0 +1,213 @@
+/* Global Styles */
+ body {
+     margin: 0;
+     font-family: 'Arial', sans-serif;
+     overflow-x: hidden;
+     background-color: #1a1a1a;
+    /* Background color for the entire page */
+}
+/* Video Overlay and Text Display Styles */
+ #logo-video-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+ #logo-video {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+ .text-overlay {
+     position: absolute;
+     z-index: 1001;
+     font-size: 24px;
+     color: #fff;
+    /* Add additional styling for text overlay as needed */
+}
+/* Navigation Styles */
+ #header {
+     text-align: center;
+     padding: 20px;
+     color: #fff;
+     font-family: 'Georgia', serif;
+    /* Premium font */
+}
+ #myMenu {
+     display: flex;
+     justify-content: center;
+     background-color: #333;
+    /* Background color for the navigation */
+}
+ #myMenu ul {
+     list-style: none;
+     padding: 0;
+}
+ #myMenu ul li {
+     display: inline-block;
+     margin: 10px;
+}
+ #myMenu ul li a {
+     text-decoration: none;
+     color: #fff;
+     font-family: 'Arial', sans-serif;
+    /* Font for navigation */
+     font-size: 18px;
+     padding: 10px 15px;
+     border-radius: 5px;
+}
+ #myMenu ul li a:hover {
+     background-color: rgb(255, 0, 0);
+    /* Glow color on hover */
+     color: #fff;
+}
+/* Main Section Styles */
+ .main-section {
+     position: relative;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+}
+ #bg-video {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     z-index: -1;
+}
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+}
+ .main-content {
+     text-align: center;
+     z-index: 1;
+}
+/* Premium Section Styles */
+ .premium-section {
+     background-color: #1a1a1a;
+    /* Change to your preferred background color */
+     color: #fff;
+     padding: 80px 0;
+}
+/* Gallery Section Styles */
+ .gallery {
+     display: flex;
+     flex-wrap: wrap;
+     overflow: hidden;
+     justify-content: space-around;
+}
+ .gallery img {
+     width: 300px;
+     height: 200px;
+     margin: 10px;
+     object-fit: cover;
+     border-radius: 5px;
+     animation: galleryAnimation 20s linear infinite;
+    /* Adjust the animation duration as needed */
+}
+/* Animation Keyframes */
+ @keyframes galleryAnimation {
+     0% {
+         transform: translateX(0);
+    }
+     100% {
+         transform: translateX(-100%);
+    }
+}
+/* Contact Section Styles */
+ .contact-section {
+     background-color: #1a1a1a;
+    /* Change to your preferred background color */
+     color: #fff;
+     padding: 80px 0;
+     text-align: center;
+}
+ .form-container {
+     max-width: 600px;
+     margin: 0 auto;
+}
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ label {
+     color: #fff;
+     font-size: 18px;
+     margin-bottom: 10px;
+}
+ input, textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #fff;
+     border-radius: 5px;
+}
+ button {
+     background-color: royalblue;
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 18px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
+ button:hover {
+     background-color: #003366;
+}
+/* Specifications Section Styles */
+ .specification-items {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 20px;
+    /* Add padding for better spacing */
+}
+ .specification-item {
+     text-align: center;
+     margin: 10px;
+}
+ .specification-item img {
+     width: 150px;
+    /* Adjust the image width as needed */
+     height: 100px;
+    /* Adjust the image height as needed */
+     margin-bottom: 10px;
+     object-fit: cover;
+     border-radius: 5px;
+}
+/* Animated Gradient Background Styles */
+ .animated-section {
+     background: linear-gradient(45deg, red, rgb(255, 165, 165));
+     background-size: 400% 400%;
+     animation: gradientAnimation 1s ease infinite;
+}
+/* Add this animation style to your existing CSS */
+ @keyframes gradientAnimation {
+     0% {
+         background-position: 0% 50%;
+    }
+     50% {
+         background-position: 100% 50%;
+    }
+     100% {
+         background-position: 0% 50%;
+    }
+}
+ 
