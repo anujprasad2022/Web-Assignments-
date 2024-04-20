@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bugatti Chiron Super Sport 300+</title>
+      <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/pagepiling.js/dist/jquery.pagepiling.min.cs
+         s">
+      <link rel="stylesheet" href="styles.css">
+      <style>
+         /* Add your additional styles here */
+         /* ... Your existing styles ... */
+         /* Specifications Section Styles */
+         .specification-items {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         padding: 20px; /* Add padding for better spacing */
+         }
+         .specification-item {
+         text-align: center;
+         margin: 10px;
+         }
+         .specification-item img {
+         width: 150px; /* Adjust the image width as needed */
+         height: 100px; /* Adjust the image height as needed */
+         margin-bottom: 10px;
+         object-fit: cover;
+         border-radius: 5px;
+         }
+         /* Title and Gallery Section Styles */
+         .animated-section {
+         background: linear-gradient(45deg, red, white);
+         background-size: 400% 400%;
+         animation: gradientAnimation 15s ease infinite;
+         }
+         /* Add this animation style to your existing CSS */
+         @keyframes gradientAnimation {
+         0% {
+         background-position: 0% 50%;
+         }
+         50% {
+         background-position: 100% 50%;
+         }
+         100% {
+         background-position: 0% 50%;
+         }
+         }
+      </style>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script
+         src="https://cdn.jsdelivr.net/npm/pagepiling.js/dist/jquery.pagepiling.min.js"
+         ></script>
+      <script src="scripts.js"></script>
+   </head>
+   <body>
+      <!-- Video Overlay and Text Display -->
+      <div id="logo-video-container">
+         <video id="logo-video" autoplay muted>
+            <source src="buggati_logo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+         <div class="text-overlay">
+            <!-- Your text overlay content goes here -->
+         </div>
+      </div>
+      <!-- Header -->
+      <div id="header" class="animated-section">
+         <h1>Bugatti Chiron Super Sport 300+</h1>
+      </div>
+      <!-- Navigation -->
+      <nav id="myMenu">
+         <ul>
+            <li data-menuanchor="home"><a href="#home">Home</a></li>
+            <li data-menuanchor="specifications"><a
+               href="#specifications">Specifications</a></li>
+            <li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+      <!-- PagePiling Wrapper -->
+      <div id="pagepiling">
+         <!-- Home Section -->
+         <div class="section" id="home">
+            <div class="main-section">
+               <video id="bg-video" autoplay loop muted>
+                  <source src="C:\Users\srohi\OneDrive\Desktop\buggati\Top
+                     Gear - Bugatti hits 304.77mph in a Chiron ｜ Top Gear.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
+               <div class="overlay"></div>
+               <div class="main-content">
+                  <p>The most powerful Bugatti ever built.</p>
+               </div>
+            </div>
+         </div>
+         <!-- Specifications Section -->
+         <div class="section" id="specifications" class="animated-section">
+            <div class="premium-section">
+               <h2>Specifications</h2>
+               <div class="specification-items">
+                  <div class="specification-item">
+                     <img src="1_spec.jpg" alt="Engine Image">
+                     <p>Engine: 8.0L W16</p>
+                  </div>
+                  <div class="specification-item">
+                     <img src="2_spec.jpg" alt="Power Image">
+                     <p>Power: 1,500 hp</p>
+                  </div>
+                  <div class="specification-item">
+                     <img src="3_spec.jpg" alt="Speed Image">
+                     <p>Top Speed: 261 mph</p>
+                  </div>
+                  <div class="specification-item">
+                     <img src="4_spec.jpg" alt="Acceleration Image">
+                     <p>0-60 mph: 2.4 seconds</p>
+                  </div>
+                  <div class="specification-item">
+                     <img src="5_spec.jpg" alt="Acceleration Image">
+                     <p>0-100 mph: 6.1 seconds</p>
+                  </div>
+                  <div class="specification-item">
+                     <img src="6_spec.png" alt="Acceleration Image">
+                     <p>0-200 mph: 23.6 seconds</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Gallery Section -->
+         <div class="section" id="gallery" class="animated-section">
+            <div class="premium-section">
+               <h2>Gallery</h2>
+               <div class="gallery">
+                  <img src="chiron1.jpeg" alt="Bugatti Chiron">
+                  <img src="chiron2.jpg" alt="Bugatti Chiron">
+                  <img src="chiron3.jpg" alt="Bugatti Chiron">
+                  <img src="chiron4.jpg" alt="Bugatti Chiron">
+                  <img src="chiron5.jpg" alt="Bugatti Chiron">
+                  <img src="chiron6.jpg" alt="Bugatti Chiron">
+                  <img src="chiron7.jpg" alt="Bugatti Chiron">
+                  <img src="chiron8.jpg" alt="Bugatti Chiron">
+                  <img src="chiron9.jpg" alt="Bugatti Chiron">
+                  <img src="chiron10.jpg" alt="Bugatti Chiron">
+                  <img src="chiron11.jpg" alt="Bugatti Chiron">
+                  <img src="chiron13.png" alt="Bugatti Chiron">
+                  <!-- Add more images as needed -->
+               </div>
+            </div>
+         </div>
+         <!-- Contact Section -->
+         <div class="section" id="contact">
+            <div class="contact-section">
+               <h2>Contact</h2>
+               <img src="chiron12.png" alt="Bugatti Chiron" align="center">
+               <div class="form-container">
+                  <!-- Contact form here -->
+                  <form>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="email" required>
+                     <label for="message">Message:</label>
+                     <textarea id="message" name="message"
+                        required></textarea>
+                     <button type="submit">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
